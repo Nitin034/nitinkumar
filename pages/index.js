@@ -1,118 +1,112 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
+import React from "react";
+import AnimatedText from "../Components/AnimatedText";
+import Link from "next/link";
+import {
+  EmailIcon,
+  LinkedInIcon,
+  GithubIcon,
+  InstagramIcon,
+} from "../Components/lcons";
+import { SiFiverr, SiUpwork } from "react-icons/si";
+import { motion } from "framer-motion";
+import Layout from "../Components/Layout";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const MotionLink = motion(Link);
+
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+      <main className="flex items-center text-dark dark:text-light w-full min-h-screen">
+        <Layout className="pt-0 pl-6 lg:pt-0 sm:pt-0 ">
+          <div className="flex items-center justify-between w-full lg:w-full lg:flex-col">
+            <div className="w-1/2 lg:w-full lg:text-center">
+              <AnimatedText
+                text="Full-Stack Web Developer🖥️"
+                className="!text-7xl !text-left m-10 lg:m-5 xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
+              />
+              <p className="my-4 text-2xl md:text-xl sm:text-lg font-medium mx-10">
+                Hi, Im <span className="text-primary">Nitin Yadav. </span>A
+                passionate Full-stack,Developer based in Noida, Delhi-NCR
+                India.📍
+              </p>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+              <div className="flex items-center self-start m-10 lg:self-center lg:justify-center">
+                <MotionLink
+                  href="/Resume"
+                  className="flex items-center bg-dark text-light p-2 rounded-full m-1 text-lg lg:text-sm font-semibold hover:bg-primary hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  whileHover={{ scale: 0.9 }}
+                >
+                  Resume
+                </MotionLink>
+                <a
+                  href="mailto:12nitinkumaryd@gmail.com"
+                  target={"_blank"}
+                  className=" w-11 lg:w-8 flex items-center bg-dark text-light p-2.5 rounded-full m-1 text-lg font-semibold hover:bg-primary hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  whileHover={{ scale: 0.9 }}
+                >
+                  <EmailIcon />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/nitinkumaryd67/"
+                  target={"_blank"}
+                  className=" w-11 lg:w-8 flex items-center bg-dark text-light p-2.5 rounded-full m-1 text-lg font-semibold hover:bg-primary hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  whileHover={{ scale: 0.9 }}
+                >
+                  <LinkedInIcon />
+                </a>
+                <a
+                  href="https://github.com/Nitin034"
+                  target={"_blank"}
+                  className=" w-11 lg:w-8 flex items-center bg-dark text-light p-2.5 rounded-full m-1 text-lg font-semibold hover:bg-primary hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  whileHover={{ scale: 0.9 }}
+                >
+                  <GithubIcon />
+                </a>
+                <a
+                  href="https://www.fiverr.com/nitinkumar67"
+                  target={"_blank"}
+                  className=" w-11 lg:w-8 flex items-center bg-dark text-light p-3 lg:p-1.5 rounded-full m-1 text-lg font-semibold hover:bg-primary hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  whileHover={{ scale: 0.9 }}
+                >
+                  <SiFiverr />
+                </a>
+                <a
+                  href="https://www.upwork.com/freelancers/~01d2a96f87e012c4c1"
+                  target={"_blank"}
+                  className=" w-11 lg:w-8 flex items-center bg-dark text-light p-3 lg:p-1.5 rounded-full m-1 text-lg font-semibold hover:bg-primary hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  whileHover={{ scale: 0.9 }}
+                >
+                  <SiUpwork />
+                </a>
+              </div>
+            </div>
+            <div className="images lg:hidden md:hidden sm:hidden w-1/2 h-[80%] absolute bottom-0 right-[100px]">
+              <Image
+                src="/Images/shape2.png"
+                width={800} // Adjust width as needed
+               height={800} // Adjust height as needed
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+                alt="Nsw"
+                className="shape "
+                priority="true"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+              />
+              <Image
+                src="/Images/Me2.png"
+                width={600} // Adjust width as needed
+                height={600} // Adjust height as needed
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+                alt="Nsw"
+                className="girl"
+                priority="true"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+              />
+            </div>
+          </div>
+        </Layout>
+      </main>
   );
 }
