@@ -25,7 +25,7 @@ export default function Home() {
             <div className="w-1/2 lg:w-full lg:text-center">
               <AnimatedText
                 text="Full-Stack Web Developer🖥️"
-                className="!text-7xl !text-left m-10 lg:m-5 xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
+                className="text-7xl text-left m-10 lg:m-5 xl:text-5xl lg:text-center lg:text-6xl md:text-5xl sm:text-3xl"
               />
               <p className="my-4 text-2xl md:text-xl sm:text-lg font-medium mx-10">
                 Hi, Im <span className="text-primary">Nitin Yadav. </span>A
@@ -41,46 +41,46 @@ export default function Home() {
                 >
                   Resume
                 </MotionLink>
-                <a
+                <MotionLink
                   href="mailto:12nitinkumaryd@gmail.com"
                   target={"_blank"}
-                  className=" w-11 lg:w-8 flex items-center bg-dark text-light p-2.5 rounded-full m-1 text-lg font-semibold hover:bg-primary hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  className="w-11 lg:w-8 flex items-center bg-dark text-light p-2.5 rounded-full m-1 text-lg font-semibold hover:bg-primary hover:text-dark border-2 border-solid border-transparent hover:border-dark"
                   whileHover={{ scale: 0.9 }}
                 >
                   <EmailIcon />
-                </a>
-                <a
+                </MotionLink>
+                <MotionLink
                   href="https://www.linkedin.com/in/nitinkumaryd67/"
                   target={"_blank"}
                   className=" w-11 lg:w-8 flex items-center bg-dark text-light p-2.5 rounded-full m-1 text-lg font-semibold hover:bg-primary hover:text-dark border-2 border-solid border-transparent hover:border-dark"
                   whileHover={{ scale: 0.9 }}
                 >
                   <LinkedInIcon />
-                </a>
-                <a
+                </MotionLink>
+                <MotionLink
                   href="https://github.com/Nitin034"
                   target={"_blank"}
                   className=" w-11 lg:w-8 flex items-center bg-dark text-light p-2.5 rounded-full m-1 text-lg font-semibold hover:bg-primary hover:text-dark border-2 border-solid border-transparent hover:border-dark"
                   whileHover={{ scale: 0.9 }}
                 >
                   <GithubIcon />
-                </a>
-                <a
+                </MotionLink>
+                <MotionLink
                   href="https://www.fiverr.com/nitinkumar67"
                   target={"_blank"}
                   className=" w-11 lg:w-8 flex items-center bg-dark text-light p-3 lg:p-1.5 rounded-full m-1 text-lg font-semibold hover:bg-primary hover:text-dark border-2 border-solid border-transparent hover:border-dark"
                   whileHover={{ scale: 0.9 }}
                 >
                   <SiFiverr />
-                </a>
-                <a
+                </MotionLink>
+                <MotionLink
                   href="https://www.upwork.com/freelancers/~01d2a96f87e012c4c1"
                   target={"_blank"}
                   className=" w-11 lg:w-8 flex items-center bg-dark text-light p-3 lg:p-1.5 rounded-full m-1 text-lg font-semibold hover:bg-primary hover:text-dark border-2 border-solid border-transparent hover:border-dark"
                   whileHover={{ scale: 0.9 }}
                 >
                   <SiUpwork />
-                </a>
+                </MotionLink>
               </div>
             </div>
             <div className="images lg:hidden md:hidden sm:hidden w-1/2 h-[80%] absolute bottom-0 right-[100px]">
