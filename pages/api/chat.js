@@ -1,5 +1,5 @@
-import Chat from "@/models/Chat"
-import connectDb from "@/middleware/mongoose"
+import Chat from "../../models/Chat"
+import connectDb from "../../middleware/mongoose"
 
 const handler = async (req, res)=> {
     if(req.method == 'POST'){

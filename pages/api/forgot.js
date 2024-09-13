@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import Forgot from "@/models/Forgot"
-import User  from "@/models/User"
+import Forgot from "../../models/Forgot"
+import User  from "../../models/User"
 export default  async function handler(req, res) {
     //Check if the user exists in the Database
     //Send on email to the user
