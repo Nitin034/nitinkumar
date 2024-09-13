@@ -1,4 +1,4 @@
-import User from "../../models/User"
+import User from "../../models/User.js"
 import connectDb from "./mongoose.js"
 var CryptoJS = require("crypto-js");
 

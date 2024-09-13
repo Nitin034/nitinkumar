@@ -1,5 +1,5 @@
  // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
- import User from "../../models/User"
+ import User from "../../models/User.js"
  import connectDb from "./mongoose.js"
  import jsonwebtoken from "jsonwebtoken"
  

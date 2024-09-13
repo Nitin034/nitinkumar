@@ -1,5 +1,5 @@
-import Footer from "@/Components/Footer";
-import Navbar from "@/Components/Navbar";
+import Footer from "@/Components/Footer.js";
+import Navbar from "@/Components/Navbar.js";
 import "@/styles/globals.css";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
