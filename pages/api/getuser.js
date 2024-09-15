@@ -1,6 +1,6 @@
  // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
  import User from "../../models/User.js"
- import connectDb from "./mongoose.js"
+ import connectDb from "../../middleware/mongoose.js"
  import jsonwebtoken from "jsonwebtoken"
  
  const handler = async (req, res)=> {

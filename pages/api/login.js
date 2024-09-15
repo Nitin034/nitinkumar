@@ -1,5 +1,5 @@
 import User from "../../models/User.js"
-import connectDb from "./mongoose.js"
+import connectDb from "../../middleware/mongoose.js"
 var CryptoJS = require("crypto-js");
 var jwt = require('jsonwebtoken');
 var token = jwt.sign({ foo: 'bar' }, 'shhhhh');
