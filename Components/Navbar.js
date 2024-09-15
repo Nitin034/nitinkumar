@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import useLocation from 'react'
-import {  FaUserCircle   } from "react-icons/fa";
 import {useRouter} from 'next/router';
 import { motion } from 'framer-motion';
 import Dropdown from './Dropdown';

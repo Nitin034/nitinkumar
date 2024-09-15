@@ -80,8 +80,8 @@ const Login = () => {
       <Head>
         <title> Login - ntinkumar.in</title>
         <meta
-          name="viewport"
-          content="Fitness Coaching Professional Gym Trainer Gym Accessories"
+          name="Nitin Login"
+          content="Explore the professional portfolio of Nitin Kumar, a skilled web developer specializing in Next.js, React, front-end, and full-stack development. View projects, expertise in modern web technologies, and contact details."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

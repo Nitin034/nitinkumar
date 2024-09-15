@@ -1,8 +1,7 @@
 import Forgot from "../../models/Forgot.js"
 
 export default  async function handler(req, res) {
-    //Check if the user exists in the Database
-    //Send on email to the user
+    
     if(req.body.sendMail){
     let token = `122wkmjidhuclskdncueyrjndwthuzkjbvdcbhuheundebxuh`
 

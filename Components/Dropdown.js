@@ -2,7 +2,6 @@ import { Fragment } from 'react'
 import { useState } from 'react';
 import { Menu, Transition } from '@headlessui/react'
 import { AiFillCaretDown , AiFillCaretUp } from "react-icons/ai";
-import {  FaUserCircle   } from "react-icons/fa";
 import useDarkMode from '../Components/hooks/useDarkMode';
 import Link from 'next/link';
 import Image from 'next/image';
