@@ -1,4 +1,4 @@
-import mongoose from "./mongoose";
+import mongoose from "mongoose.js";
 
 const connectDb =  handler => async (req, res)=> {
     if(mongoose.connections[0].readyState){
