@@ -3,8 +3,8 @@ import * as React from "react";
 export const EmailIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={45}
-    height={45}
+    width="1em"
+    height="1em"
     fill="none"
     viewBox="0 0 48 48"
     className={`w-full h-auto ${className}`}

@@ -6,7 +6,6 @@ import {
   EmailIcon,
   LinkedInIcon,
   GithubIcon,
-  InstagramIcon,
 } from "../Components/lcons";
 import { SiFiverr, SiUpwork } from "react-icons/si";
 import { motion } from "framer-motion";
@@ -25,7 +24,7 @@ export default function Home() {
             <div className="w-1/2 lg:w-full lg:text-center">
               <AnimatedText
                 text="Full-Stack Web Developer🖥️"
-                className="text-7xl text-left m-10 lg:m-5 xl:text-5xl lg:text-center lg:text-6xl md:text-5xl sm:text-3xl"
+                className="text-[60px] text-left m-10 lg:m-5 xl:text-5xl lg:text-center lg:text-6xl md:text-5xl sm:text-3xl"
               />
               <p className="my-4 text-2xl md:text-xl sm:text-lg font-medium mx-10">
                 Hi, Im <span className="text-primary">Nitin Yadav. </span>A
@@ -86,7 +85,7 @@ export default function Home() {
             <div className="images lg:hidden md:hidden sm:hidden w-1/2 h-[80%] absolute bottom-0 right-[100px]">
               <Image
                 src="/Images/shape2.png"
-                width={800} // Adjust width as needed
+                width={700} // Adjust width as needed
                height={800} // Adjust height as needed
 
                 alt="Nsw"
