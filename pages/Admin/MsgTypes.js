@@ -187,4 +187,4 @@ const Timeline = ({ el }) => {
   );
 };
 
-export { Timeline, TextMsg , MediaMsg, ReplyMsg, LinkMsg, DocMsg };
+export default { Timeline, TextMsg , MediaMsg, ReplyMsg, LinkMsg, DocMsg };

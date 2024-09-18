@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Fragment } from "react";
 import { BsEmojiSmile } from "react-icons/bs";
 import { Menu, Transition } from "@headlessui/react";
-import { Chat_History } from "./Admin/ChatList";
+import  Chat_History  from "./Admin/ChatList";
 import {
   Timeline,
   TextMsg,

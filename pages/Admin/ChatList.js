@@ -128,4 +128,4 @@ const Chat_History = [
     },
   ];
 
-  export { ChatList , Chat_History };
+export default { ChatList , Chat_History };
