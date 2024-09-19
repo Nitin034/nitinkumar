@@ -193,7 +193,7 @@ const Projects = () => {
                   "/Images/cripto-3.png",
                   "/Images/cripto-4.png",
                 ]}
-                link="/https://github.com/Nitin034/www.nswCrypto.com"
+                link="https://github.com/Nitin034/www.nswCrypto.com"
                 github="https://github.com/Nitin034/www.nswCrypto.com"
                 type="Project"
               />
@@ -206,7 +206,7 @@ const Projects = () => {
                   "/Images/jobport-2.png",
                   "/Images/jobport-3.png",
                 ]}
-                link="/https://github.com/Nitin034/Jobportal"
+                link="https://github.com/Nitin034/Jobportal"
                 github="https://github.com/Nitin034/Jobportal"
                 type="Project"
               />
@@ -235,7 +235,7 @@ const Projects = () => {
                   "/Images/game.png",
                 ]}
                 img="/Images/game.png"
-                link="/https://github.com/Nitin034/www.game.io.in"
+                link="https://github.com/Nitin034/www.game.io.in"
                 github="https://github.com/Nitin034/www.game.io.in"
                 type="Project"
               />
@@ -292,7 +292,7 @@ const Projects = () => {
                   "/Images/Jokebook.png",
                   "/Images/jokebook-2.png",
                 ]}
-                link="/https://github.com/Nitin034/www.nswjokes.com"
+                link="https://github.com/Nitin034/www.nswjokes.com"
                 github="https://github.com/Nitin034/www.nswjokes.com"
                 type="Project"
               />

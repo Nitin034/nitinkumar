@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { Fragment } from "react";
+import React, { useState, Fragment } from "react";
 import { BsEmojiSmile } from "react-icons/bs";
 import { Menu, Transition } from "@headlessui/react";
-import  Chat_History  from "./Admin/ChatList";
+import  Chat_History  from "../Components/Admin/ChatList";
 import {
   Timeline,
   TextMsg,
@@ -10,7 +9,7 @@ import {
   ReplyMsg,
   LinkMsg,
   DocMsg,
-} from "./Admin/MsgTypes";
+} from "../Components/Admin/MsgTypes";
 import data from "@emoji-mart/data";
 import Picker from "@emoji-mart/react";
 import Image from "next/image";
@@ -157,31 +156,29 @@ const TextMe = () => {
                     <div className="flex flex-col flex-grow h-0 p-4 overflow-auto">
                       <div className="flex w-full mt-2 space-x-3 max-w-xs">
                         <div>
-                          {Chat_History.map((el) => {
-                            switch (el.type) {
-                              case "divider":
-                                return <Timeline el={el} />;
+                        {Chat_History && Array.isArray(Chat_History) && Chat_History.length > 0 && Chat_History.map((el) => {
+    switch (el.type) {
+        case "divider":
+            return <Timeline el={el} />;
 
-                              case "msg":
-                                switch (el.subtype) {
-                                  case "img":
-                                    return <MediaMsg el={el} />;
-                                  case "doc":
-                                    return <DocMsg el={el} />;
-                                  case "link":
-                                    return <LinkMsg el={el} />;
-                                  case "reply":
-                                    return <ReplyMsg el={el} />;
+        case "msg":
+            switch (el.subtype) {
+                case "img":
+                    return <MediaMsg el={el} />;
+                case "doc":
+                    return <DocMsg el={el} />;
+                case "link":
+                    return <LinkMsg el={el} />;
+                case "reply":
+                    return <ReplyMsg el={el} />;
 
-                                  default:
-                                    return <TextMsg el={el} />;
-                                }
-
-                                break;
-                              default:
-                                return <></>;
-                            }
-                          })}
+                default:
+                    return <TextMsg el={el} />;
+            }
+        default:
+            return null;
+    }
+})}
                         </div>
                       </div>
                     </div>
