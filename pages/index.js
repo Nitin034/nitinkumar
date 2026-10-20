@@ -27,9 +27,7 @@ export default function Home() {
                 className="text-[60px] text-left m-10 lg:m-5 xl:text-5xl lg:text-center lg:text-6xl md:text-5xl sm:text-3xl"
               />
               <p className="my-4 text-2xl md:text-xl sm:text-lg font-medium mx-10">
-                Hi, Im <span className="text-primary">Nitin Yadav. </span>A
-                passionate Full-stack,Developer based in Noida, Delhi-NCR
-                India.📍
+                Hi, Im <span className="text-primary">Nitin Yadav. </span>A full-time Data Engineer by profession and a part-time Full-Stack Developer by passion, based in Mumbai, Maharashtra India.📍
               </p>
 
               <div className="flex items-center self-start m-10 lg:self-center lg:justify-center">
